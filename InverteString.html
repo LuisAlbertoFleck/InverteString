@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inverter String</title>
+</head>
+<body>
+	<h1>Inverter String</h1>
+    <h2>Job Rotation - Ribeirão Preto - ATUALIZADO</h2>
+	<label for="input-string">Informe uma string:</label>
+	<input type="text" id="input-string">
+	<button onclick="inverter()">Inverter</button>
+	<p id="output"></p>
+	<script>
+		function inverter() {
+			let inputString = document.getElementById('input-string').value;
+			let output = document.getElementById('output');
+			let novaString = '';
+			for (let i = inputString.length - 1; i >= 0; i--) {
+				novaString += inputString[i];
+			}
+			output.textContent = novaString;
+		}
+	</script>
+</body>
+</html>
